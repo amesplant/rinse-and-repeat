@@ -1,0 +1,9 @@
+<h2>Pick your Deck!</h2>
+
+<div>
+  <ul>
+  <% @decks.each do |deck| %>
+    <li><%= deck.name %></li>
+  <% end %>
+  </ul>
+</div>
