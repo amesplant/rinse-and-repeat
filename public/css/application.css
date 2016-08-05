@@ -79,6 +79,7 @@ a, a:visited{
 }
 
 
+
 /* Deck Cards */
 #deck_container {
   text-align: center;
@@ -103,4 +104,10 @@ a, a:visited{
   font-size: 1.6em;
   line-height: 2.5em;
   margin-left: 5%;
+}
+
+/* Form Fields */
+.form_text {
+  color: #394AAB;
+
 }
