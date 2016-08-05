@@ -1,18 +1,10 @@
 <h1>Login</h1>
-
+<%= @error %>
 <% if @error %>
   <span><%= @error %> </span>
-
 <% end %>
 
-<form method="post" action="/login">
-  <%= erb :_form_fields %>
-<!--   <label for="username">Username:</label>
-  <input type="text" name="username">
-
-
-  <label for="password">Password:</label>
-  <input type="password" name="password"> -->
-
-  <input type="submit" value="Start the Wash">
+<form method="post" action="/sessions/login">
+  <%= erb :'/sessions/_form_fields' %>
+  <input class="form_text" type="submit" value="Start the Wash">
 </form>

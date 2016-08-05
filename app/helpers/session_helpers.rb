@@ -7,7 +7,9 @@ def logged_in?
 end
 
 def authenticate!
-  redirect '/login' unless logged_in?
+  # @error = "Hey suds for brains, try again!!!"
+
+  redirect '/sessions/login' unless logged_in?
 end
 
 # def authorized?
