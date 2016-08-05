@@ -10,18 +10,30 @@
             margin: 0;
 }
 
+html {
+  font-family: Helvetica,Arial,sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #42A5F5;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 h1, h2, h3 {
   font-family: 'Cookie', cursive;
+  font-weight: lighter;
 }
 
 #container {
   color: white;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   height: 100%;
 }
 
@@ -64,4 +76,31 @@ nav {
 a, a:visited{
   text-decoration: none;
   color: #394AAB;
+}
+
+
+/* Deck Cards */
+#deck_container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.grid_box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 35px 0;
+  vertical-align: top;
+  margin: 2%;
+  text-align: center;
+  background: url(../images/bubble.png) center no-repeat;
+  font-family: 'Cookie', cursive;
+  font-size: 2em;
+}
+
+.label{
+  color: white;
+  font-size: 1.6em;
+  line-height: 2.5em;
+  margin-left: 5%;
 }
