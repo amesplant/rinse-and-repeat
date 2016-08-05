@@ -9,8 +9,6 @@ post '/sessions/login' do
 
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-      # @decks = Decks.all
-      # erb :'/decks/index'
       redirect '/'
     else
       @error = "Hey suds for brains, try again!!!"

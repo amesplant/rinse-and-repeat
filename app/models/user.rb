@@ -20,11 +20,11 @@ class User < ActiveRecord::Base
     self.encrypted_password = @password
   end
 
-  def password_length
-    if @entered_password && @entered_password.length < 5
-      self.errors.add(:password, "should be at least 5 characters silly!")
-    end
-  end
+  # def password_length
+  #   if @entered_password && @entered_password.length < 5
+  #     self.errors.add(:password, "should be at least 5 characters silly!")
+  #   end
+  # end
 
   def authenticate(possible_password)
     self.password == possible_password
