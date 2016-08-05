@@ -1,23 +1,26 @@
-get '/login' do
+# direct to login form
+get '/sessions/login' do
   erb :'sessions/login'
 end
 
-post '/login' do
-  if @user = User.find_by(username: params[:username])
-    if @user.authenticate(@user.email, params[:password])
+# receive params from login form
+post '/sessions/login' do
+  @user = User.find_by(username: params[:username])
+
+    if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-      @user = User.find(session[:user_id])
-      erb :'/users/show'
+      # @decks = Decks.all
+      # erb :'/decks/index'
+      redirect '/'
     else
       @error = "Hey suds for brains, try again!!!"
       erb :'/sessions/login'
     end
-  else
-    erb :'/sessions/login'
-  end
+  # end
 end
 
-get 'logout' do
+# logout
+get '/sessions/logout' do
   session.delete(:user_id)
   redirect '/'
 end
