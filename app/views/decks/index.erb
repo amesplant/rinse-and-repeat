@@ -1,9 +1,11 @@
-<h2>Pick your Deck!</h2>
+<h1>Pick your Suds Category!</h1>
 
-<div>
-  <ul>
+<div id="deck_container">
   <% @decks.each do |deck| %>
-    <li><%= deck.name %></li>
+    <div class="grid_box">
+      <a href="/decks/<%= deck.id %>">
+        <div class="label"><%= deck.name %></div>
+      </a>
+    </div>
   <% end %>
-  </ul>
 </div>
