@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Cookie';
+
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+}
+
+body {
+  background-color: #42A5F5;
+}
+
+h1, h2, h3 {
+  font-family: 'Cookie', cursive;
+}
+
+#container {
+  color: white;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+}
+
+header {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  background-image: url("../images/header-rinse-and-repeat.png");
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
+  border-bottom: 2px solid #5F5E5E;
+}
+
+header .title {
+  display: inline-block;
+  margin: 98px 0 0 10%;
+  font-family: 'Cookie', cursive;
+  font-size: 4em;
+  color: #394AAB;
+}
+
+nav {
+  display: block;
+  margin: 0 5% 0 70%;
+}
+
+.nav_link {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 0 2%;
+  width: 75px;
+  line-height: 2.2em;
+  background-color: #FFCA28;
+  border-radius: 3px;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: #394AAB;
+}
