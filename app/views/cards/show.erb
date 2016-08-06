@@ -1,28 +1,16 @@
-<h1>Deck Name Trivia</h1>
+<h1><%= @card.deck.name %> Trivia</h1>
 
 <form class="question_card" action="" method="post">
-  <div class="question">Display the question here</div>
+  <h2><%= @card.question %></h2>
     <!-- Create a loop through the array of questions to display -->
     <ul>
-      <li>
-        <input type="radio" id="option_1" name="selector">
-        <label for="f-option">Option 1</label>
-      </li>
-
-      <li>
-        <input type="radio" id="option_2" name="selector">
-        <label for="s-option">Option 2</label>
-      </li>
-
-      <li>
-        <input type="radio" id="option_3" name="selector">
-        <label for="t-option">Option 3</label>
-      </li>
-
-      <li>
-        <input type="radio" id="option_4" name="selector">
-        <label for="t-option">Option 4</label>
-      </li>
+      <% @card.possible_answers.each do |possible_answer| %>
+        <li>
+          <input type="radio" id="<%= "option_#{possible_answer.id}" %>" name="selector">
+          <label for="<%= "option_#{possible_answer.id}" %>"><%= possible_answer.answer %></label>
+          <div class="check"><div class="inside"></div></div>
+        </li>
+      <% end %>
     </ul>
-  <input type="submit" value="submit answer">
+  <input type="submit" value="suds it">
 </form>
