@@ -88,6 +88,10 @@ a, a:visited{
   width: 75px;
 }
 
+a.username {
+  width: auto;;
+}
+
 nav a:hover {
   background-color: #394AAB;
   color: white;
