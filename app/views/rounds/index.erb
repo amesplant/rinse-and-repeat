@@ -1,16 +1,15 @@
-<!-- ajf working on this-->
+<!-- currently displays as "undefined method 'id' for nil:NilClass" -->
+<br>
+<br>
 <h2>Your suds stats</h2>
-
-session[:user_id] == @user.id
-
-<!-- Gameplay will send. This is all cards guessed correctly on first try. -->
-session[:correct_first_guesses]
-
-<!-- total cards -->
-@deck.cards.count
-
+<br>
+<!-- session[:user_id] == @user.id -->
+<br>
 <!-- display deck -->
-@rounds.deck_id
-
-<!-- Total guesses. Gameplay will send -->
-session[:total_guesses]
+<p>Cards you've seen: <%= session[:cards_presented].count %></p>
+<br>
+<p>Cards in play: <%= session[:cards_in_play].count %></p>
+<br>
+<p>Your correct first guessions: <%= session[:correct_first_guesses] %></p>
+<br>
+<p>Your correct total guesses: <%= session[:total_guesses] %>

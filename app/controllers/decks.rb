@@ -11,3 +11,9 @@ get '/decks/:id' do
 
   redirect "cards/#{cards.first}"
 end
+
+get '/decks/:deck_id/rounds/guest' do
+  @rounds = Round.find_by(deck_id: params[:deck_id])
+  erb :'/rounds/index'
+end
+
