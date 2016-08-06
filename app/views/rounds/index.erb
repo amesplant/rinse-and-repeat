@@ -1,15 +1,7 @@
-<!-- currently displays as "undefined method 'id' for nil:NilClass" -->
-<br>
-<br>
-<h2>Your suds stats</h2>
-<br>
-<!-- session[:user_id] == @user.id -->
-<br>
+<h1><%= @deck.name %></h1>
+
 <!-- display deck -->
 <p>Cards you've seen: <%= session[:cards_presented].count %></p>
-<br>
 <p>Cards in play: <%= session[:cards_in_play].count %></p>
-<br>
 <p>Your correct first guessions: <%= session[:correct_first_guesses] %></p>
-<br>
-<p>Your correct total guesses: <%= session[:total_guesses] %>
+<p>Your correct total guesses: <%= session[:total_guesses] %></p>
