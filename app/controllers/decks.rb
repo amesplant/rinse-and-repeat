@@ -8,6 +8,7 @@ get '/decks/:id' do
   session[:total_guesses] = 0
   session[:cards_presented] = []
   session[:cards_in_play] = cards
+  session[:first_view?] = true
 
   redirect "cards/#{cards.first}"
 end

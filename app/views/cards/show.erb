@@ -1,13 +1,13 @@
 <h1><%= @card.deck.name %> Trivia</h1>
 
-<form class="question_card" action="" method="post">
+<form class="question_card" action="/cards/<%= @card.id %>" method="post">
   <h2><%= @card.question %></h2>
     <!-- Create a loop through the array of questions to display -->
     <ul>
-      <% @card.possible_answers.each do |possible_answer| %>
+      <% @card.possible_answers.shuffle.each do |possible_answer| %>
         <li>
-          <input type="radio" id="<%= "option_#{possible_answer.id}" %>" name="selector">
-          <label for="<%= "option_#{possible_answer.id}" %>"><%= possible_answer.answer %></label>
+          <input type="radio" id="<%= "option_#{possible_answer.id}" %>" name="guess" value="<%= possible_answer.id %>">
+          <label for="<%= "option_#{possible_answer.id}" %>"><%= possible_answer.answer %> (id:<%= possible_answer.id %>)</label>
           <div class="check"><div class="inside"></div></div>
         </li>
       <% end %>
