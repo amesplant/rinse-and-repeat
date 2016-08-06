@@ -26,7 +26,7 @@
         <div class="nav_link"><a href="/users/new">register</a></div>
         <div class="nav_link"><a href="/sessions/login">login</a></div>
       <% else %>
-        <div class="nav_link"><a href="/users/:id">username</a></div>
+        <div class="nav_link"><a href="/users/:id"><%= @user.username %></a></div>
         <div class="nav_link"><a href="/sessions/logout">logout</a></div>
       <% end %>
       <div class="nav_link"><a href="/">home</a></div>
