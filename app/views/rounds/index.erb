@@ -1,7 +1,5 @@
-<h1>Your suds stats</h1>
-<br>
-<!-- session[:user_id] == @user.id -->
-<br>
+<h1><%= @deck.name %></h1>
+
 <!-- display deck -->
 <p>Cards you've seen: <%= session[:cards_presented].count %></p>
 <p>Cards in play: <%= session[:cards_in_play].count %></p>
