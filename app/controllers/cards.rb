@@ -14,19 +14,21 @@ post '/cards/:id' do
   guess = PossibleAnswer.find_by(id: params[:guess].to_i)
   # if the guess is the correct answer ...
   if guess == @card.correct_answer
-    p "That was a very clean answer. Clean this one up."
+    feedback = "Nice clean up on your last answer. Try to clean this one up."
     # remove this card from cards_in_play
     session[:cards_in_play].slice!(0)
     # increment correct_first_guesses if first time viewing this card
     session[:correct_first_guesses] += 1 if session[:first_view?]
   else
     # the guess was not the correct answer
-    p "That was a dirty answer. Try to clean it up later."
+    feedback = "That last answer was a dirty answer. Try to clean it up later."
   end
   # increment total guesses
   session[:total_guesses] += 1
   # add this card to cards already presented to the user
   session[:cards_presented] << @card.id
-
+  p @feedback
   p session.inspect
+
+  redirect :"/cards/#{session[:cards_in_play].first}?feedback=#{feedback}"
 end

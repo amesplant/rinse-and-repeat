@@ -1,5 +1,7 @@
 <h1><%= @card.deck.name %> Trivia</h1>
 
+<div class="feedback"><%= params[:feedback] %></div>
+
 <form class="question_card" action="/cards/<%= @card.id %>" method="post">
   <h2><%= @card.question %></h2>
     <!-- Create a loop through the array of questions to display -->
