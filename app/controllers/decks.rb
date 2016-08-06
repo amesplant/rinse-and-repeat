@@ -6,9 +6,8 @@ get '/decks/:id' do
   cards.shuffle!
   session[:correct_first_guesses] = 0
   session[:total_guesses] = 0
-  session[:cards_presented] = []
+  session[:cards_presented] = Set.new []
   session[:cards_in_play] = cards
-  session[:first_view?] = true
 
   redirect "cards/#{cards.first}"
 end
