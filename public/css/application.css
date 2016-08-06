@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Cookie';
+@import url('http://fonts.googleapis.com/css?family=Lato');
 
 * {
     -webkit-box-sizing: border-box;
@@ -23,6 +24,7 @@ body {
 
 h1 {
   font-size: 3em;
+  margin: 2% 0;
 }
 
 h1, h2, h3 {
@@ -35,6 +37,7 @@ h1, h2, h3 {
   margin: 0 auto;
   width: 80%;
   height: 100%;
+  font-family: 'Cookie', cursive;
 }
 
 header {
@@ -59,18 +62,15 @@ header .title {
 
 nav {
   display: block;
-  margin: 0 5% 0 70%;
+  text-align: right;
+  padding-right: 4%;
 }
 
 .nav_link {
   color: white;
   display: inline-block;
   text-align: center;
-  margin: 0 2%;
-  width: 75px;
-  line-height: 2.2em;
-  background-color: #FFCA28;
-  border-radius: 3px;
+  margin: 0 .3%;
 }
 
 a, a:visited{
@@ -78,7 +78,21 @@ a, a:visited{
   color: #394AAB;
 }
 
+.nav_link a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  width: 100%;
+  background-color: #FFCA28;
+  border-radius: 3px;
+  width: 75px;
+}
 
+nav a:hover {
+  background-color: #394AAB;
+  color: white;
+  -webkit-transition: background 0.5s linear;
+}
 
 /* Deck Cards */
 #deck_container {
@@ -107,7 +121,110 @@ a, a:visited{
 }
 
 /* Form Fields */
+form {
+  font-size: 1.5em;
+}
+
+input {
+  margin: 1%;
+  padding: 1%;
+  border: 3px solid #42A5F5;
+  border-radius: 6px;
+  width: 40%;
+}
+
+label {
+  font-size: 1.3em;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid #394AAB;
+}
+
 .form_text {
   color: #394AAB;
+}
 
+/* MUTLIPLE CHOICE */
+#container ul{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 1em;
+}
+
+.feedback {
+  color: #FFCA28;
+  font-size: 2em;
+  margin: 1% 0;
+}
+
+ul li{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label{
+  display: block;
+  position: relative;
+  padding: 0px 30px;
+  margin: 10px auto;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+ul li:hover label{
+	color: #FFCA28;
+}
+
+ul li .check{
+  display: block;
+  position: absolute;
+  border: 3px solid white;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  top: 3px;
+  left: 0;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+ul li:hover .check {
+  border: 7px solid #FFCA28;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 8px solid #394AAB;
+}
+
+input[type=radio]:checked ~ label{
+  color: #394AAB;
+}
+
+input[type=submit] {
+  border: 0;
+  padding: 2%;
+  border-radius: 100%;
+  font-size: 1.4em;
+  margin-left: 25px;
+  background-color: #B2E5FC;
+  color: #394AAB;
+  width: 120px;
+}
+
+input[type=submit]:hover {
+  background-color: #394AAB;
+  color: white;
+  -webkit-transition: background 0.5s linear;
 }

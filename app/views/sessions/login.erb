@@ -1,10 +1,10 @@
 <h1>Login</h1>
-<%= @error %>
+
 <% if @error %>
-  <span><%= @error %> </span>
+  <div class="feedback"><%= @error %> </div>
 <% end %>
 
 <form method="post" action="/sessions/login">
   <%= erb :'/sessions/_form_fields' %>
-  <input class="form_text" type="submit" value="Start the Wash">
+  <input class="form_text" type="submit" value="wash it">
 </form>
