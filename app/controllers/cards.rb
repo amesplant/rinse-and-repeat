@@ -28,7 +28,7 @@ post '/cards/:id' do
         round = Round.create(deck_id: card.deck_id, user_id: session[:user_id], correct_first_guesses: session[:correct_first_guesses], total_guesses: session[:total_guesses])
         redirect "/decks/#{card.deck_id}/rounds/#{round.id}"
       else
-        redirect "/decks/#{card.deck_id}/rounds/guest"
+        redirect :"/decks/#{card.deck_id}/rounds/guest"
       end
     end
   else
