@@ -28,7 +28,7 @@ post '/cards/:id' do
       if logged_in?
         redirect "/decks/#{card.deck_id}/rounds/#{round.id}"
       else
-        redirect "/decks/#{card.deck_id}/rounds/guest"
+        redirect :"/decks/#{card.deck_id}/rounds/guest"
       end
     end
   else
