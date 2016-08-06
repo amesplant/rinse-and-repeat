@@ -23,9 +23,9 @@ post '/cards/:id' do
     session[:cards_in_play].slice!(0)
     # if there are no more cards to play
     if session[:cards_in_play].empty?
-      p "GAME OVER"
       # if user is registered and logged in ...
       if logged_in?
+        round = Round.create(deck_id: card.deck_id, user_id: session[:user_id], correct_first_guesses: session[:correct_first_guesses], total_guesses: session[:total_guesses])
         redirect "/decks/#{card.deck_id}/rounds/#{round.id}"
       else
         redirect "/decks/#{card.deck_id}/rounds/guest"
