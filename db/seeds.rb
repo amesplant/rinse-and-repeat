@@ -36,52 +36,57 @@ Card.create(question: "Think of another question?", correct_answer_id: 25, deck_
 # Possible Answers ======================================================
 PossibleAnswer.create(answer: "On your feet", card_id: 1)
 
-PossibleAnswer.create(answer: "Behind the wash basin.", card_id: 2)
+PossibleAnswer.create(answer: "Behind the wash basin.", card_id: 1)
 
-PossibleAnswer.create(answer: "Sock Heaven", card_id: 3)
+PossibleAnswer.create(answer: "Sock Heaven", card_id: 1)
 
-PossibleAnswer.create(answer: "Cleaning public toilets by some Good Samaritans in Japan.", card_id: 4)
+PossibleAnswer.create(answer: "Cleaning public toilets by some Good Samaritans in Japan.", card_id: 2)
 
-PossibleAnswer.create(answer: "Cleaning sink drains by hand in Sweden.", card_id: 5)
+PossibleAnswer.create(answer: "Cleaning sink drains by hand in Sweden.", card_id: 2)
 
-PossibleAnswer.create(answer: "Cleaning .....", card_id: 6)
+PossibleAnswer.create(answer: "Cleaning .....", card_id: 2)
 
-PossibleAnswer.create(answer: "Play Doh", card_id: 7)
+PossibleAnswer.create(answer: "Play Doh", card_id: 3)
 
-PossibleAnswer.create(answer: "Silly Putty", card_id: 8)
+PossibleAnswer.create(answer: "Silly Putty", card_id: 3)
 
-PossibleAnswer.create(answer: "Day-Glo Slime", card_id: 9)
+PossibleAnswer.create(answer: "Day-Glo Slime", card_id: 3)
 
-PossibleAnswer.create(answer: "Pica", card_id: 10)
+PossibleAnswer.create(answer: "Pica", card_id: 4)
 
-PossibleAnswer.create(answer: "Something else", card_id: 11)
+PossibleAnswer.create(answer: "Something else", card_id: 4)
 
-PossibleAnswer.create(answer: "Something else again", card_id: 12)
+PossibleAnswer.create(answer: "Something else again", card_id: 4)
 
-PossibleAnswer.create(answer: "Mr. Clean (in Europe)", card_id: 13)
+PossibleAnswer.create(answer: "Mr. Clean (in Europe)", card_id: 5)
 
-PossibleAnswer.create(answer: "Mr. Sparkle (in Japan)", card_id: 14)
+PossibleAnswer.create(answer: "Mr. Sparkle (in Japan)", card_id: 5)
 
-PossibleAnswer.create(answer: "Mr. Maple (in Canada)", card_id: 15)
+PossibleAnswer.create(answer: "Mr. Maple (in Canada)", card_id: 5)
 
-PossibleAnswer.create(answer: "Eat food out of a tortilla to avoid washing bowls", card_id: 16)
+PossibleAnswer.create(answer: "Eat food out of a tortilla to avoid washing bowls", card_id: 6)
 
-PossibleAnswer.create(answer: "Something lazy", card_id: 17)
+PossibleAnswer.create(answer: "Something lazy", card_id: 6)
 
-PossibleAnswer.create(answer: "Something else lazy", card_id: 18)
+PossibleAnswer.create(answer: "Something else lazy", card_id: 6)
 
-PossibleAnswer.create(answer: "Pet answer 1", card_id: 19)
+PossibleAnswer.create(answer: "Pet answer 1", card_id: 7)
 
-PossibleAnswer.create(answer: "Pet answer 2", card_id: 20)
+PossibleAnswer.create(answer: "Pet answer 2", card_id: 7)
 
-PossibleAnswer.create(answer: "Pet answer 3", card_id: 21)
+PossibleAnswer.create(answer: "Pet answer 3", card_id: 7)
 
-PossibleAnswer.create(answer: "Cat Food Scented Soap", card_id: 22)
+PossibleAnswer.create(answer: "Cat Food Scented Soap", card_id: 8)
 
-PossibleAnswer.create(answer: "Dog Breath Scented Soap", card_id: 23)
+PossibleAnswer.create(answer: "Dog Breath Scented Soap", card_id: 8)
 
-PossibleAnswer.create(answer: "Fish Scale Soap", card_id: 24)
+PossibleAnswer.create(answer: "Fish Scale Soap", card_id: 8)
 
+PossibleAnswer.create(answer: "Pet answer again 1", card_id: 9)
+
+PossibleAnswer.create(answer: "Pet answer again 2", card_id: 9)
+
+PossibleAnswer.create(answer: "Pet answer again 3", card_id: 9)
 
 
 
