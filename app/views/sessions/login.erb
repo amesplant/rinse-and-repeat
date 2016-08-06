@@ -1,7 +1,7 @@
 <h1>Login</h1>
-<%= @error %>
+
 <% if @error %>
-  <span><%= @error %> </span>
+  <div class="feedback"><%= @error %> </div>
 <% end %>
 
 <form method="post" action="/sessions/login">

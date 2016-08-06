@@ -9,7 +9,7 @@
       <% @card.possible_answers.shuffle.each do |possible_answer| %>
         <li>
           <input type="radio" id="<%= "option_#{possible_answer.id}" %>" name="guess" value="<%= possible_answer.id %>">
-          <label for="<%= "option_#{possible_answer.id}" %>"><%= possible_answer.answer %> (id:<%= possible_answer.id %>)</label>
+          <label for="<%= "option_#{possible_answer.id}" %>"><%= possible_answer.answer %></label>
           <div class="check"><div class="inside"></div></div>
         </li>
       <% end %>
