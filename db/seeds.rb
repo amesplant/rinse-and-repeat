@@ -24,13 +24,13 @@ Card.create(question: "What does S.O.S. stand for, (as in the S.O.S. cleaning pa
 
 
 # Pets ==============================================================
-Card.create(question: "Think of another question?", correct_answer_id: 19, deck_id: 3)
+Card.create(question: "What is the starting price of a dog whirlpool?", correct_answer_id: 19, deck_id: 3)
 # cockroach swatter slippers
 
 Card.create(question: "______________ is a soap you can buy in Lincoln Square.", correct_answer_id: 22, deck_id: 3)
 # Cat Food Scented Soap, or Absinthe Soap, or Bacon
 
-Card.create(question: "Think of another question?", correct_answer_id: 25, deck_id: 3)
+Card.create(question: "How many PoochPant Diapers are left in stock at Amazon.com on Saturday night? (8/6)", correct_answer_id: 25, deck_id: 3)
 
 # Card(id: integer, question: string, correct_answer_id: integer, deck_id: integer, created_at: datetime, updated_at: datetime)
 
@@ -71,11 +71,11 @@ PossibleAnswer.create(answer: "Save Our Silverware", card_id: 6)
 
 PossibleAnswer.create(answer: "Save Our Sanity", card_id: 6)
 
-PossibleAnswer.create(answer: "Pet answer 1", card_id: 7)
+PossibleAnswer.create(answer: "$3950", card_id: 7)
 
-PossibleAnswer.create(answer: "Pet answer 2", card_id: 7)
+PossibleAnswer.create(answer: "$150", card_id: 7)
 
-PossibleAnswer.create(answer: "Pet answer 3", card_id: 7)
+PossibleAnswer.create(answer: "$699", card_id: 7)
 
 PossibleAnswer.create(answer: "Cat Food Scented Soap", card_id: 8)
 
@@ -83,11 +83,11 @@ PossibleAnswer.create(answer: "Dog Breath Scented Soap", card_id: 8)
 
 PossibleAnswer.create(answer: "Fish Scale Soap", card_id: 8)
 
-PossibleAnswer.create(answer: "Pet answer again 1", card_id: 9)
+PossibleAnswer.create(answer: "4 (but with more on the way)", card_id: 9)
 
-PossibleAnswer.create(answer: "Pet answer again 2", card_id: 9)
+PossibleAnswer.create(answer: "0 (who the hell would diaper their dog)", card_id: 9)
 
-PossibleAnswer.create(answer: "Pet answer again 3", card_id: 9)
+PossibleAnswer.create(answer: "29 (soon to be discounted for clearance)", card_id: 9)
 
 
 
