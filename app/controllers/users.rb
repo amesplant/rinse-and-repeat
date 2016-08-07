@@ -12,3 +12,14 @@ post '/users' do
     erb :'users/new'
   end
 end
+
+get '/users/:id' do
+  authenticate!
+  @user = current_user
+  if @user
+    @rounds = @user.rounds
+    erb :'users/show'
+  else
+    redirect '/'
+  end
+end

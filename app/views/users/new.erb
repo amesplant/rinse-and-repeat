@@ -1,14 +1,8 @@
 <h1>Create a New Account</h1>
 <form action="/users" method="post">
   <label for="email">Email:</label>
-  <input class="form_text" type="email" name="email" value="<%= @user.try(:email) %>" />
+  <input class="form_text" type="email" name="email" placeholder="email" value="<%= @user.try(:email) %>" />
   <br />
   <%= erb :'/sessions/_form_fields' %>
-<!--   <label for="username">Username:</label>
-  <input type="text" name="username" />
-  <br />
-  <label for="password">Password:</label>
-  <input type="password" name="password" />
-  <br /> -->
   <input class="form_text" type="submit" value="Register" />
 </form>
