@@ -236,3 +236,26 @@ input[type=submit]:hover {
   color: white;
   -webkit-transition: background 0.5s linear;
 }
+
+/* statistics */
+table {
+  border-collapse: collapse;
+  color: white;
+  margin: 0 12%;
+  width: 60%;
+}
+table, th, td {
+   border: 2px solid white;
+}
+
+th {
+  height: 40px;
+  background-color: #3949AB;
+}
+
+td {
+  width: 25%;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
