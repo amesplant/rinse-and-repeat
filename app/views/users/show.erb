@@ -1,8 +1,7 @@
-<h1><%= @user.username %><h1>
+<h1><%= @user.username %></h1>
 
 <% @user.decks.distinct.each do |deck| %>
-  <a href="/decks/<%= deck.id %>"><%= deck.name %></div></a>
-
+  <h2><a href="/decks/<%= deck.id %>"><%= deck.name %></a></h2>
   <% rounds_for_deck = deck.rounds.where(user_id: @user.id) %>
   <table class="statistics">
     <tr>
@@ -11,7 +10,6 @@
       <th>First Guess Correct</th>
       <th>Total Guesses</th>
     </tr>
-
     <% rounds_for_deck.each do |round| %>
       <tr>
         <td><%= round.created_at.strftime("%m/%d/%y") %></td>
