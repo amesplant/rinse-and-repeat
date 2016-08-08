@@ -1,0 +1,16 @@
+{
+  "name": "rinse-and-repeat",
+  "description": "Flash Card App built for DBC",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
