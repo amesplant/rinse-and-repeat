@@ -17,3 +17,9 @@ get '/decks/:deck_id/rounds/guest' do
   @deck = Deck.find_by(id: params[:deck_id])
   erb :'/rounds/index'
 end
+
+get '/decks/:deck_id/rounds/:id' do
+  @rounds = Round.find_by(deck_id: params[:deck_id])
+  @deck = Deck.find_by(id: params[:deck_id])
+  erb :'/rounds/index'
+end

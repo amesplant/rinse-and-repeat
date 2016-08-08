@@ -1,7 +1,3 @@
 <h1><%= @deck.name %></h1>
 
-<!-- display deck -->
-<p>Cards you've seen: <%= session[:cards_presented].count %></p>
-<p>Cards in play: <%= session[:cards_in_play].count %></p>
-<p>Your correct first guessions: <%= session[:correct_first_guesses] %></p>
-<p>Your correct total guesses: <%= session[:total_guesses] %></p>
+<p>You've completed a round of <%= @deck.name %>. You answered <%= session[:correct_first_guesses] %> / <%= @deck.cards.count %> cards correctly on the first try. You submitted  <%= session[:total_guesses] %> total guesses before each card was answered correctly.</p>
